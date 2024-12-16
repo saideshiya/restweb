@@ -31,126 +31,278 @@ Publish the website in the given URL.
 ```
 <!DOCTYPE html>
 <html lang="en">
-<head style="background-color: black;">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('c:\Users\admin\OneDrive\Desktop\marble.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #0e0a0a;
+        }
+        header {
+            background-color: rgba(212, 183, 88, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: rgba(146, 161, 100, 0.8);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            background-color: rgba(220, 152, 74, 0.6);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            color: #fff;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
 </head>
-<body background="c:\Users\admin\Downloads\Another Round.jpg">
-    
-    <header align="center"  style="background-color: rgb(7, 3, 4) " ><h1 style="color:rgba(255, 171, 199, 0.849)"> Welcome to Our Restaurant</h1>
-        <h2 style="color: aliceblue;"> The Spicy Hut </h2>
-        <nav>
-            <p><a href="file:///C:/Users/admin/tt/Eligibility-for-Admission/index.html" style="color: beige;"> ~ MENU </a> <a href="file:///C:/Users/admin/tt/Eligibility-for-Admission/index.html" style="color: beige;"> ~ HOME </a> <a href="file:///C:/Users/admin/tt/Eligibility-for-Admission/index.html" style="color: beige;">~ ABOUT </a> </p>
-        </nav>
-    </header>
-    <section id="about" style="color: beige;">
-        <h1>About Us :</h1>
-        <p> <h2>Welcome to My Restaurant, where we serve delicious food made from the freshest ingredients. Our chefs are passionate about creating dishes that bring joy and flavor to every meal, fully made of fresh and hygienic things.</h2></p>
-        <p>for further information contact = <a href="@spicy_hut.com"> @spity_hut.com</a> / <a href="080 102 203 000"> 080 102 203 000</a></p>
-        
-    </section>
+<body bgcolor="black">
 
-    <section id="contact" style="color: beige;">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
+<header>
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;" color="black"> 🙏WELCOME TO SPICY SPOT 🌶️</h1>
+</header>
+
+<nav>
+    <a href="c:\Users\admin\OneDrive\Desktop\menu.jpg">Menu</a>
+    <a href="">Order Online</a>
+    <a href="#booking">Table Booking</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Flavorful Grilled Chicken Meals.jpeg" alt="Dish 1">
+            <h3 color="black">Grilled Chicken</h3>
+            <p>Price: ₹350</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\World Food Day _ Indian Dish _ Veg Biryani _ Food Photography.jpeg" alt="Dish 2">
+            <h3>Vegetable Biryani</h3>
+            <p>Price: ₹200</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Classic Margherita Pizza.jpeg" alt="Dish 3">
+            <h3>Margherita Pizza</h3>
+            <p>Price: ₹699</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Creamy Chicken Alfredo Fettuccine_ The Ultimate Comfort Food Recipe You'll Crave!.jpeg" alt="Dish 4">
+            <h3>Pasta Alfredo</h3>
+            <p>Price: ₹999</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Chicken Recipes.jpeg" alt="Dish 5">
+            <h3>Caesar Salad</h3>
+            <p>Price: ₹259</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Saveurs Secretes · Photography.jpeg" alt="Dish 6">
+            <h3>Butter Naan</h3>
+            <p>Price: ₹200</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Restaurant-Style Paneer Tikka - Sanjana_Feasts - Paneer Recipes.jpeg" alt="Dish 7">
+            <h3>Tandoori Paneer</h3>
+            <p>Price: ₹350</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Homemade Chicken Tikka Kabab Recipe - khaddoroshik.jpeg" alt="Dish 8">
+            <h3>Chicken Tikka</h3>
+            <p>Price: ₹299</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Peanut Butter Brownies [90 Minutes].jpeg" alt="Dish 9">
+            <h3>Chocolate Brownie</h3>
+            <p>Price: ₹199</p>
+        </div>
+        <div class="menu-item">
+            <img src="c:\Users\admin\Downloads\Mango Smoothie (Quick and Easy Recipe).jpeg" alt="Dish 10">
+            <h3>Mango Smoothie</h3>
+            <p>Price: ₹200</p>
+        </div>
+    </div>
+</section>
+
+<section id="order">
+    <h2>Order Online</h2>
+    <form action="/order" method="post">
+        <div class="form-group">
+            <label for="dish">Select Dish:</label>
+            <select id="dish" name="dish">
+                <option>Grilled Chicken</option>
+                <option>Vegetable Biryani</option>
+                <option>Margherita Pizza</option>
+                <option>Pasta Alfredo</option>
+                <option>Caesar Salad</option>
+                <option>Butter Naan</option>
+                <option>Tandoori Paneer</option>
+                <option>Chicken Tikka</option>
+                <option>Chocolate Brownie</option>
+                <option>Mango Smoothie</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+        <div class="form-group">
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+        </div>
+        <button type="submit"><a href="c:\Users\admin\OneDrive\Desktop\done.jpeg">Place Order</a></button>
+    </form>
+</section>
+
+<section id="booking">
+    <h2>Table Booking</h2>
+    <form action="/book-table" method="post">
+        <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            
+        </div>
+        <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section><br>
-    <body background="c:\Users\admin\Downloads\Wallpaper for Free Downl.html">
-    <section style="color: bisque;">
-        <center><br>
-           <br> <a href="c:\Users\admin\Downloads\Black digital signage catering menu template idea.jpg"> <button>➡ MENU CARD </button> </a>
-        <h1> 1. Our Delicious Dishes ❤‍🔥</h1>        
-        <img src="file:///C:/Users/admin/Downloads/realistic%20pizza.webp" alt="Delicious Pizza" width="1000" height="600"><p><h2> # cheesy pizza 🍕</h2></p>
-        <img src="c:\Users\admin\Downloads\Easy Chocolate Cheesecake Bars - Baker by Nature.jpg" alt="Tasty Dessert" width="1000" height="600"><P> <h2># tasty Dessert 🍰</h2></P>
-        <img src="c:\Users\admin\Downloads\Indian Chili Paneer Step By Step Recipe - Tasty Cooking Aroma.jpg"alt="paneer masala" width="1000" height="600"><P> <h2># paneer masala 🥗</h2> </P>
-        <img src="c:\Users\admin\Downloads\Easy Tteokbokki (Spicy Korean Rice Cakes) ll Korean food ll Yammy tasty Tteokbokki.jpg" width="1000" height="600"><P><h2># Tteokbokki 🥘</h2></P>
-        <img src="c:\Users\admin\Downloads\9dc26749-c449-4ec1-82c9-4b279ed8c427.jpg" width="1000" height="600" ><P><h2># korean gigimbab 🍚</h2> </P>
-        <img src="c:\Users\admin\Downloads\barbecue food.jpg" alt=" barbecue"  width="1000" height="600" ><P> <h2># spicy barbecue 🍗</h2></P>
-        <img src="c:\Users\admin\Downloads\Food.jpg" alt=" madurai parotta " width="1000" height="600"><P> <h2># madurai parotta 🌯</h2></P>
-        <img src="c:\Users\admin\Downloads\Watermelon Lemonade Without Added Sugar.jpg" width="1000" height="600"> <p><h2># watermelon juice 🍷</h2></p>
-        <img src="c:\Users\admin\Downloads\1c347bc3-4e3e-4c4e-9a7a-98ccd86d9419.jpg" alt="ice cream" width="1000" height="600"><p><h2># choco icecream 🍨</h2></p>
-        <hr width="2000px" height="200px">
-        </center>
-    </section>
-
-    <section style="color: beige;">
-        <center>
-        <h1 style="color: beige;"> 2. dining styles</h1>
-        <img src="c:\Users\admin\Downloads\Colourful, magical restaurant design for Enfes in Milton Keynes_ — Bar & Restaurant Interior Designers - Creative & Original.jpg" width="1000" height="600"><p><h2> Family space</h2></p>
-        <img src="c:\Users\admin\Downloads\Rajwada- The Traditional Style Restaurant In Jabalpur _ Design cloud (1).jpg" width="1000" height="600" ><p><h2> Group dining</h2></p>
-        <img src="c:\Users\admin\Downloads\Commercial Restaurant Banquette Seating Design.jpg" width="1000" height="600" > <P><h2>Banquette seating </h2></P>
-        <img src="c:\Users\admin\Downloads\Mesas terraza.jpg" width="1000" height="600"> <p> <h2> Roof Top </h2></p>
-        </center>
-    </section>
-    <section style="color: bisque;" style="width: 1000;">
-    <center><hr>
-        <h2> TABLE BOOKING </h2>
-    <form width="1000"> 
-        <label for="seatings">Name:</label>
-        <input type="text" id="seatings" seat="type" required><br>
-
-        <br><label for="seatings">no.of ppl:</label>
-        <input type="text" id="seatings" seat="type" required>
-         <label for="seatings">phone no:</label>
-        <input type="text" id="seatings" seat="type" required><br>
-        <br> <label for="seatings"> seating code:</label>
-        <input type="text" id="seatings" seat="type" required><br>
-        <br> <label for="seatings">Date:</label>
-        <input type="text" id="seatings" seat="type" required>
-         <label for="seatings">Day:</label>
-        <input type="text" id="seatings" seat="type" required><br>
-          <br> <button align="center" style="background-color: aquamarine;"> <a href="c:\Users\admin\Downloads\tenor (1).gif"> DONE </a> </button>         
-    </center>
-    <section style="color: azure;">
-        <center>
-             <h1 style="color: aquamarine;"> ONLINE FOOD ORDER  </h1>
-             <iframe src="https://www.food.com/" width="1000" height="600"></iframe>
-        </center><hr>
-    </section>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+        </div>
+        <button type="submit">Book Table</button>
     </form>
-    </section><br>
-    <br>
-    <br>
-    <section style="color: beige;">
-    <h1 style="color: bisque;"> PAYMENT SITE :</h1>
-    <p> UPI : <a href="https://www.npci.org.in/what-we-do/upi/product-overview"> PAYMENT </a></p>
-    <p> NET BANKING :<a href="https://retail.onlinesbi.sbi/npersonal/"> PAYMENT </a></p>
-    </section>
-     <h1 style="color: beige;">DETAILS :</h1><p style="color: aqua;"> PHONE NUMBER : <a href="tel:+123456789" style="color: aliceblue;">+1-234-567-8900</a> </p><p style="color: aqua;"> MAIL ID :<a href="@spicy_hit.com"> @spicy_hut.com</a></p>
-    <p style="color: aquamarine;"> ADDRESS : <p style="color: azure;"> Tamil Nadu , Chennai , CoraFood Street no : 123 , opposite to the jayam mahal  </p> </p>
-    <p style="color: aquamarine;"> WEBSITE : <a href="WWW.spityhut.com"> WWW.spityhut.com </a></p> 
-    <p style="color: aquamarine;"> INSTA ID : <a href="Spi_y@hut"> Spi_y@hut</a></p>
-    
-    <section style="color: blanchedalmond;" width="500" height="100">
-        <center>
-            <span style="font-size:30px ;"> &#9733;&#9733;&#9733;&#9733;&#9734;</span>
-            <h2> THANK YOU FOR VISITING OUR PAGE ! </h2>
-        </center>
-    </section>
-    <center>       
-    <h2 style="background-color: azure;" > copyright©spicy_hut reg no : 24005381  </h2>
-    </center>
-    </body>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to SPICY SPOT , where we offer delicious dishes made with fresh ingredients and served with love. Enjoy an amazing dining experience with us! find your tast buds on our shop ! hurry hurry~~</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Address: 123 Food Street, Gourmet City</p>
+    <p>Phone: +123 456 789</p>
+    <p>Email: contact@spicy_spot.com</p>
+</section>
+
+<footer bgcolor="white">
+    <p>&copy; 2024 spicy spicy_spot. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
 ```
-
+           
+            
 ## OUTPUT:
-![Screenshot (84)](https://github.com/user-attachments/assets/addb2a17-4e71-4f28-9543-9aff79208c2a)
 
 
+![Screenshot (109)](https://github.com/user-attachments/assets/0f0c006f-bbff-4df1-84bf-56c00461c209)
 
+![Screenshot (110)](https://github.com/user-attachments/assets/bcc7b156-859e-4698-a154-e47e47aede6b)
 
+![Screenshot (111)](https://github.com/user-attachments/assets/86f3cc41-72c9-4ab5-9982-ce8cdf85ea0b)
+
+![Screenshot (112)](https://github.com/user-attachments/assets/ca358405-8b13-420b-b76d-fff68f76ae6e)
+
+![Screenshot (113)](https://github.com/user-attachments/assets/90fd124f-8f2b-4d8f-aa7d-eeb2b5aeb966)
 
 
 ## RESULT:
